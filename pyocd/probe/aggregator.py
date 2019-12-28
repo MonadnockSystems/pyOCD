@@ -16,10 +16,12 @@
 
 from .cmsis_dap_probe import CMSISDAPProbe
 from .stlink_probe import StlinkProbe
+from .jlink_probe import JlinkProbe
 
 PROBE_CLASSES = [
     CMSISDAPProbe,
     StlinkProbe,
+    JlinkProbe
     ]
 
 class DebugProbeAggregator(object):
